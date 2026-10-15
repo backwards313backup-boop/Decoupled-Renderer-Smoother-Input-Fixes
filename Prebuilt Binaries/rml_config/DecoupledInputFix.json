@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "values": {
+    "enabled": true,
+    "fix_scroll": true,
+    "mouse_scale": 1.0,
+    "force_decouple_on_start": true
+  }
+}

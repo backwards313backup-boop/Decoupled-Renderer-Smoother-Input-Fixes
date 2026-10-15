@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>DecoupledInputFix</AssemblyName>
+    <RootNamespace>DecoupledInputFix</RootNamespace>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PathMap>$(MSBuildProjectDirectory)=/_/DecoupledInputFix</PathMap>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrooxEngine" HintPath="$(ResoniteDir)\FrooxEngine.dll" Private="false" />
+    <Reference Include="Elements.Core" HintPath="$(ResoniteDir)\Elements.Core.dll" Private="false" />
+    <Reference Include="Renderite.Shared" HintPath="$(ResoniteDir)\Renderite.Shared.dll" Private="false" />
+    <PackageReference Include="ResoniteModLoader" Version="5.0.1" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>
